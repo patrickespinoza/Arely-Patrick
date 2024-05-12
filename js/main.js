@@ -27,27 +27,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1000);
   };
 
-  // Verificar si localStorage está disponible
-  if (typeof localStorage !== "undefined") {
-    const savedDate = localStorage.getItem("countdownDate");
-    if (savedDate) {
-      // Ocultar el input y el botón si hay una fecha guardada
-      countdownDateInput.style.display = "none";
-      document.getElementById("startCount-btn");
-      // Iniciar la cuenta regresiva
-      startCountdown(savedDate);
-    }
-  }
-
   // Agregar un evento 'change' al input de fecha
   countdownDateInput.addEventListener("change", (event) => {
     const selectedDate = event.target.value;
     // Guardar la fecha en el localStorage
     localStorage.setItem("countdownDate", selectedDate);
-    // Ocultar el input y el botón
-    countdownDateInput.style.display = "none";
-    document.getElementById("startCount-btn").style.display = "none";
-    // Iniciar la cuenta regresiva
-    startCountdown(selectedDate);
+
+    window.location.reload();
   });
+
+  // Verificar si localStorage está disponible
+  if (typeof localStorage !== "undefined") {
+    const savedDate = localStorage.getItem("countdownDate");
+    if (savedDate) {
+      const putDate = document.getElementById("starCount-btn");
+      // Ocultar el input y el botón
+      countdownDateInput.style.display = "none";
+      putDate.style.display = "none";
+      // Iniciar la cuenta regresiva
+      startCountdown(savedDate);
+    }
+  }
 });
