@@ -1,0 +1,42 @@
+body {
+    height: 100%;
+}
+
+#body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    border: 10px solid red;
+}
+
+.carousel-inner img {
+    max-width: 600px
+    
+}
+
+#carusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+}
+
+.countdown-item {
+    text-align: center;
+}
+
+.countdown-item span:first-child{
+    font-size: 2em;
+}
+.hidden {
+    display: none;
+  }
+  

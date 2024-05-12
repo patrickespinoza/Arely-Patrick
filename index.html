@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Boda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+     crossorigin="anonymous">
+   <link rel="stylesheet" href="/css/style.css">
+ 
+</head>
+<body>
+
+<div id="body" class="container text-center"> 
+    <div class="row align-items-center" >
+    <div class="row">   
+        <div class="col-12">
+            <h1 class="gap-4">Arely & Patrick</h1>
+            <h3>Nos casamos</h3>
+        </div>
+    </div>    
+     <div id="carusel" class=" row mt-4 col-12 text-center">        
+         <div id="carouselExampleFade" class="justify-content-center carousel slide carousel-fade" data-bs-ride="carousel" style ="max-width: 600px">
+                <div class="carousel-inner">
+                  <div class="carousel-item active " data-bs-interval="3500">
+                    <img src="/imagens/0FA2B1DA-75AA-4227-B9CC-721744E7D6F5 2.JPG" class="d-block w-100" alt="we" >
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3500">
+                    <img src="/imagens/IMG_3538.JPG" class="d-block 200px" alt="we" >
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3500">
+                    <img src="/imagens/IMG_3539.JPG" class="d-block w-100" alt="we" >
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+             </div>
+        </div>
+    <div class="row"> 
+        <div class="col-12 mt-4">
+            <h1>Estas invitado</h1>
+            <h3 class="mt-3">Queremos que seas parte de este momento tan especial.</h3>
+        </div>
+    </div> 
+    <div class="row">       
+        <div id="putdate" class="col-12 mt-4">
+            <input type="datetime-local" id="countdown-date">
+            <button id="starCount-btn">startcountdown</button>
+        </div>       
+     </div>
+     <div class="row mt-3">       
+        <div class="col-12 countdown-timer">
+            <div class="countdown-item">
+                <span id="days">00</span>
+                </span>Dias</span>
+            </div>
+            <div class="countdown-item">
+                <span id="hours">00</span>
+                </span>Horas</span>
+            </div>
+            <div class="countdown-item">
+                <span id="minutes">00</span>
+                </span>Minutos</span>
+            </div>
+            <div class="countdown-item">
+                <span id="seconds">00</span>
+                </span>Segundos</span>
+            </div>
+        </div>       
+     </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+ crossorigin="anonymous"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
